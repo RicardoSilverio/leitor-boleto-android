@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Leitor Boleto</string>
+    <string name="btn_linhadigitavel_hint">Informe a linha digitável do boleto</string>
+    <string name="lbl_tipoboleto">Tipo:</string>
+    <string name="lbl_linhadigitavel">Linha Digitável:</string>
+    <string name="lbl_codigobarras">Código de Barras:</string>
+    <string name="lbl_datavencimento">Data de Vencimento:</string>
+    <string name="lbl_valor">Valor:</string>
+    <string name="txt_pagamento">Pagamento de Concessionária</string>
+    <string name="txt_titulo">Título Bancário</string>
+    <string name="txt_indisponivel">Indisponível</string>
+</resources>

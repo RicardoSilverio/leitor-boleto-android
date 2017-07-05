@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".BoletoValidadoActivity">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/img_boletovalido"
+                android:src="@mipmap/ic_valido"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                style="@style/LayoutDetalhesBoleto"
+                android:id="@+id/layout_tipoboleto"
+                app:layout_constraintTop_toBottomOf="@+id/img_boletovalido">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DetalheBoleto"
+                    android:text="@string/lbl_tipoboleto"
+                    android:id="@+id/lbl_tipoboleto" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/lbl_tipoboleto"
+                    android:id="@+id/txt_tipoboleto"
+                    style="@style/DetalheBoleto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                style="@style/LayoutDetalhesBoleto"
+                android:id="@+id/layout_linhadigitavel"
+                app:layout_constraintTop_toBottomOf="@+id/layout_tipoboleto">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DetalheBoleto"
+                    android:text="@string/lbl_linhadigitavel"
+                    android:id="@+id/lbl_linhadigitavel" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_linhadigitavel"
+                    style="@style/DetalheBoleto"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                style="@style/LayoutDetalhesBoleto"
+                android:id="@+id/layout_codigobarras"
+                app:layout_constraintTop_toBottomOf="@+id/layout_linhadigitavel">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DetalheBoleto"
+                    android:text="@string/lbl_codigobarras"
+                    android:id="@+id/lbl_codigobarras" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_codigobarras"
+                    style="@style/DetalheBoleto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                style="@style/LayoutDetalhesBoleto"
+                android:id="@+id/layout_valor"
+                app:layout_constraintTop_toBottomOf="@+id/layout_codigobarras">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DetalheBoleto"
+                    android:text="@string/lbl_valor"
+                    android:id="@+id/lbl_valor" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_valor"
+                    style="@style/DetalheBoleto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                style="@style/LayoutDetalhesBoleto"
+                android:id="@+id/layout_datavecimento"
+                app:layout_constraintTop_toBottomOf="@+id/layout_valor">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/DetalheBoleto"
+                    android:text="@string/lbl_datavencimento"
+                    android:id="@+id/lbl_datavencimento" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/lbl_tipoboleto"
+                    android:id="@+id/txt_datavencimento"
+                    style="@style/DetalheBoleto" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_voltar"
+                android:src="@mipmap/ic_left"
+                app:layout_constraintTop_toBottomOf="@id/layout_datavecimento"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:onClick="voltar" />
+
+
+        </android.support.constraint.ConstraintLayout>
+</ScrollView>
