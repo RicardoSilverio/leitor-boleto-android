@@ -45,6 +45,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void iniciarCamera(View v) {
+        Intent intent = new Intent(this, CapturaBarrasActivity.class);
+        startActivityForResult(intent, Constantes.REQUEST_LER_CODIGO_BARRAS);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if(requestCode == Constantes.REQUEST_LER_CODIGO_BARRAS && resultCode == Constantes.RESULT_CODIGO_BARRAS_VALIDO) {
+            startActivity(data);
+        }
+    }
+
     public void validarBoleto(View v) {
 
         String linhaDigitavel = txtLinhaDigitavel.getText().toString();

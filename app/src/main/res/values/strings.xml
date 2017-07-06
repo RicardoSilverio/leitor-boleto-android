@@ -9,4 +9,6 @@
     <string name="txt_pagamento">Pagamento de Concessionária</string>
     <string name="txt_titulo">Título Bancário</string>
     <string name="txt_indisponivel">Indisponível</string>
+    <string name="msg_permissao_camera">Precisamos do acesso à câmera para ler o código de barras. Toque para tentar novamente.</string>
+    <string name="msg_armazenamento_baixo">Espaço suficiente para usar essa aplicação</string>
 </resources>

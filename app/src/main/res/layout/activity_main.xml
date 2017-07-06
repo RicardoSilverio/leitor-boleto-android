@@ -44,16 +44,33 @@
 
         </android.support.design.widget.TextInputLayout>
 
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/layout_linhadigitavel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btn_camera"
+            android:layout_height="90dp"
+            android:layout_width="90dp"
+            android:src="@mipmap/ic_camera"
+            android:layout_gravity="center"
+            android:onClick="iniciarCamera"/>
+
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/btn_validar"
             android:layout_height="90dp"
             android:layout_width="90dp"
-            android:layout_margin="36dp"
             android:src="@mipmap/ic_right"
-            app:layout_constraintTop_toBottomOf="@id/layout_linhadigitavel"
-            app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintRight_toLeftOf="parent"
-            android:onClick="validarBoleto"/>
+            android:layout_marginLeft="50dp"
+            android:onClick="validarBoleto" />
+
+        </LinearLayout>
 
 
 
